@@ -30,4 +30,8 @@ public abstract class TaxPayer {
 	}
 	
 	public abstract Double tax();
+	
+	public String toString() {
+		return name + ": $ " + String.format("%.2f", tax());
+	}
 }
